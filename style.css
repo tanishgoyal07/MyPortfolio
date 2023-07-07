@@ -136,10 +136,11 @@
     font-weight: 1000;
     margin: 0;
 }
-.home>.center-content>p#desig {
+.home>.center-content>.multiple-text {
     font-size: 3rem;
     font-weight: 400;
     margin: 0;
+    transition-delay: 7s;
 }
 
 .home>.center-content>h3 {
@@ -157,7 +158,7 @@
     margin-left: 40px;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
-.home>.center-content>p#desig {
+.home>.center-content>.multiple-text {
     text-align: left;
     margin-left: 35px;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);

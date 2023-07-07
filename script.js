@@ -1,18 +1,19 @@
 const headLine = new SplitType('.center-content>h3')
-const myText2 = new SplitType('.center-content>p', {charClass:'char2'})
-const myText = new SplitType('.but', {charClass:'char3'})
-const myText3 = new SplitType('.nav>h3', {charClass:'char3'})
+const myText1 = new SplitType('.center-content>p', {charClass:'char2'})
+const myText3 = new SplitType('.but', {charClass:'char3'})
+const myText4 = new SplitType('.nav>h3', {charClass:'char3'})
 var tl = gsap.timeline({defaults: {ease: "Expo.easeInOut"}})
 
 tl.from('.char', {
     y: -100,
     stagger: 0.05,
-    delay: 1
+    delay: 0.2
 })
 .from('.char2', {
     y: -100,
     stagger: 0.05,
-    duration: .3
+    duration: .3,
+    delay: 0.3
 }, "-=1.2")
 
 .from('.char3', {
@@ -27,6 +28,13 @@ tl.from('.char', {
     duration: 1.0
 })
 
+var typed = new Typed(".multiple-text" ,{
+    strings: ["Student" , "Frontend Developer", "Flutter Developer"],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop: true,
+})
 
 // const button = document.querySelector(".buttons");
 
